@@ -12,6 +12,7 @@ const Profile = (props) => {
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+
   return (
     <div
       className={`my-3 d-flex align-items-center ${mobile && "flex-column"}`}
